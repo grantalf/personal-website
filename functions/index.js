@@ -41,7 +41,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
         mailOptions = {
           from: 'Grant Harris',
           to: 'grantxvx@gmail.com',
-          subject: 'Compatibility Score Received!',
+          subject: 'Your Message Has Been Received!!',
           html: `
       <p style='font-size=16px>From: ${name}</p>
       <p style='font-size=16px>Email: ${email}</p>
@@ -637,7 +637,6 @@ exports.sendMail = functions.https.onRequest((request, response) => {
     </table>
   </body>
 </html>
-
       `,
       };
       transporter.sendMail(mailOptions);
@@ -658,7 +657,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
         if (error) {
           response.send(error);
         } else {
-          response.send('message sent successfully!!!');
+          response.send('Potential employer message sent successfully!!!');
         }
       });
 

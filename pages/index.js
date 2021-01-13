@@ -197,7 +197,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                     className={classes.learnButtonHero}
                     variant='outlined'
                   >
-                    <span style={{ marginRight: 10 }}>Learn More</span>
+                    <span style={{ marginLeft: 10, marginRight: 10 }}>
+                      Learn More
+                    </span>
                     <ButtonArrow
                       width={15}
                       height={15}
@@ -234,15 +236,20 @@ const Index = ({ setValue, setSelectedIndex }) => {
               }}
             >
               <Typography variant='h4'>React</Typography>
-              <Typography variant='subtitle1' className={classes.subtitle}>
+              <Typography
+                variant='body1'
+                paragraph
+                className={classes.subtitle}
+              >
                 Building beautiful and performant websites with the power of
                 React.
-              </Typography>
-              <Typography variant='subtitle1'>
+                <br />
                 Attention to detail and an eye for efficiency with the aim to
-                produce{' '}
-                <span className={classes.specialText}>beautiful websites</span>.
+                produce
+                <br />
+                <span className={classes.specialText}>beautiful websites.</span>
               </Typography>
+
               <Button
                 component={Link}
                 href='/reactapps'
@@ -253,7 +260,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                   setSelectedIndex(1);
                 }}
               >
-                <span style={{ marginRight: 10 }}>Learn More</span>
+                <span style={{ marginLeft: 10, marginRight: 10 }}>
+                  Learn More
+                </span>
                 <ButtonArrow
                   width={10}
                   height={10}
@@ -288,11 +297,11 @@ const Index = ({ setValue, setSelectedIndex }) => {
               <Typography variant='h4'>React Native</Typography>
               <Typography variant='subtitle1' className={classes.subtitle}>
                 Leveraging React for streamlined native mobile development.
+                <br />
+                Seemlessly integrating the benefits of React into the
+                <br /> mobile app space, be it iOS or Android.
               </Typography>
-              <Typography variant='subtitle1'>
-                Seemlessly integrating the benefits of React into the mobile app
-                space, {matchesSM ? null : <br />} be it iOS or Android.
-              </Typography>
+
               <Button
                 component={Link}
                 href='/reactnative'
@@ -303,7 +312,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                   setSelectedIndex(2);
                 }}
               >
-                <span style={{ marginRight: 10 }}>Learn More</span>
+                <span style={{ marginLeft: 10, marginRight: 10 }}>
+                  Learn More
+                </span>
                 <ButtonArrow
                   width={10}
                   height={10}
@@ -339,10 +350,10 @@ const Index = ({ setValue, setSelectedIndex }) => {
               <Typography variant='h4'>Teamwork</Typography>
               <Typography variant='subtitle1' className={classes.subtitle}>
                 Eager to be a positive-minded, meaningful member of your team.
-              </Typography>
-              <Typography variant='subtitle1'>
+                <br />
                 Highly interested in a collaborative work environment.
               </Typography>
+
               <Button
                 component={Link}
                 href='/teamwork'
@@ -353,7 +364,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                   setSelectedIndex(3);
                 }}
               >
-                <span style={{ marginRight: 10 }}>Learn More</span>
+                <span style={{ marginLeft: 10, marginRight: 10 }}>
+                  Learn More
+                </span>
                 <ButtonArrow
                   width={15}
                   height={15}
@@ -376,7 +389,7 @@ const Index = ({ setValue, setSelectedIndex }) => {
             container
             alignItems='center'
             justify='center'
-            style={{ height: '100em', marginTop: '12em' }}
+            style={{ height: '75em', marginTop: '12em' }}
           >
             <Card className={classes.revolutionCard}>
               <CardContent>
@@ -403,7 +416,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                       className={classes.learnButton}
                       onClick={() => setValue(2)}
                     >
-                      <span style={{ marginRight: 10 }}>Learn More</span>
+                      <span style={{ marginLeft: 10, marginRight: 10 }}>
+                        Learn More
+                      </span>
                       <ButtonArrow
                         width={15}
                         height={15}
@@ -422,7 +437,7 @@ const Index = ({ setValue, setSelectedIndex }) => {
           <Grid
             container
             direction='row'
-            style={{ height: '80em' }}
+            style={{ height: '40em' }}
             alignItems='center'
             className={classes.infoBackground}
           >
@@ -450,7 +465,8 @@ const Index = ({ setValue, setSelectedIndex }) => {
                     About Me
                   </Typography>
                   <Typography variant='subtitle2'>
-                    Please reach out to <br /> learn more about me!
+                    Please reach out to learn <br />
+                    more about me!
                   </Typography>
                   <Grid item>
                     <Button
@@ -465,7 +481,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                       }}
                       onClick={() => setValue(3)}
                     >
-                      <span style={{ marginRight: 10 }}>Learn More</span>
+                      <span style={{ marginLeft: 10, marginRight: 10 }}>
+                        Learn More
+                      </span>
                       <ButtonArrow width={10} height={10} fill='white' />
                     </Button>
                   </Grid>
@@ -484,7 +502,7 @@ const Index = ({ setValue, setSelectedIndex }) => {
                     Contact Me
                   </Typography>
                   <Typography variant='subtitle2'>
-                    Tell me more about yourself and your organization!
+                    Tell me more about yourself and <br /> your organization!
                   </Typography>
                   <Grid item>
                     <Button
@@ -499,7 +517,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                       }}
                       onClick={() => setValue(4)}
                     >
-                      <span style={{ marginRight: 10 }}>Learn More</span>
+                      <span style={{ marginLeft: 10, marginRight: 10 }}>
+                        Learn More
+                      </span>
                       <ButtonArrow width={10} height={10} fill='white' />
                     </Button>
                   </Grid>

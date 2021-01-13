@@ -405,9 +405,9 @@ const Index = ({ setValue, setSelectedIndex }) => {
                   </Grid>
                   <Grid item>
                     <Typography variant='subtitle1'>
-                      I have a strong desire to produce products that are
+                      I have a strong desire to produce products that are <br />
                       elegant to use, intuitive to utilize, and transformative
-                      to the overall user-experience.
+                      to <br /> the overall user-experience.
                     </Typography>
                     <Button
                       component={Link}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Grid, Typography, useMediaQuery } from '@material-ui/core';
+import { Grid, Typography, useMediaQuery, Hidden } from '@material-ui/core';
 import Lottie from 'react-lottie';
 
 import technologyAnimation from '../src/animations/technologyAnimation/data.json';
@@ -25,6 +25,7 @@ const BuildBetter = ({ setValue }) => {
   const matchesMD = useMediaQuery(theme.breakpoints.down('sm'));
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
   const matchesXS = useMediaQuery(theme.breakpoints.down('xs'));
+  const matchesLG = useMediaQuery(theme.breakpoints.down('lg'));
 
   const defaultOptions = {
     loop: true,
@@ -114,7 +115,7 @@ const BuildBetter = ({ setValue }) => {
                 paragraph
               >
                 What used to be an option is now a mandatory part of people's
-                lives. The responsibility ethically, effectively, and
+                lives. The responsibility to ethically, effectively, and
                 compassionately engage with technology is now more important
                 than ever.
               </Typography>
@@ -123,7 +124,7 @@ const BuildBetter = ({ setValue }) => {
                 variant='body1'
                 paragraph
               >
-                I want to help companies create products that effect our world
+                I want to help companies create products that affect our world
                 and those who live on it in the most beneficial way possible.
               </Typography>
               <Typography
@@ -234,7 +235,7 @@ const BuildBetter = ({ setValue }) => {
         container
         direction={matchesMD ? 'column' : 'row'}
         className={classes.rowContainer}
-        style={{ backgroundColor: '#B3B3B3', height: '90em' }}
+        style={{ backgroundColor: '#B3B3B3', height: '40em' }}
       >
         <Grid
           item
@@ -279,14 +280,16 @@ const BuildBetter = ({ setValue }) => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid item style={{ alignSelf: 'center' }} lg>
-          <img
-            src='/assets/consultationIcon.svg'
-            alt='handshake'
-            width='100%'
-            style={{ maxWidth: '50em' }}
-          />
-        </Grid>
+        <Hidden mdDown>
+          <Grid item style={{ alignSelf: 'center' }} lg>
+            <img
+              src='/assets/consultationIcon.svg'
+              alt='handshake'
+              width='100%'
+              style={{ maxWidth: matchesMD ? '20em' : '50em' }}
+            />
+          </Grid>
+        </Hidden>
       </Grid>
       {/*-----Responsive Design-----*/}
       <Grid

@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography.learnButton,
     fontSize: '0.9rem',
     height: 45,
-    width: 145,
+    width: 160,
   },
   learnButton: {
     ...theme.typography.learnButton,

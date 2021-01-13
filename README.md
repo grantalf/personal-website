@@ -1,5 +1,14 @@
 # Next.js example
 
+Build with:
+
+-React
+-Material UI
+-Nextjs
+
+Deployed with:
+-Vercel
+
 ## How to use
 
 Download the example [or clone the repo](https://github.com/mui-org/material-ui):
